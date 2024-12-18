@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="reset.css">
 
   <link rel="stylesheet" href="monospace.css">
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1692.0.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
   </head>
@@ -13,7 +14,7 @@
   <header class="header">
     <nav class="navbar">
       <a href="index.html">Home</a>
-      <a href="calendar.html">Events</a>
+      <!-- <a href="calendar.html">Events</a> -->
       <div id="problems">
       Problem of the 
       <a id="potw" href="potw.html">Week<a>
@@ -37,19 +38,6 @@
     </p>
 
     <hr>
-
-
-
-    <form>
-      <div class="inline-input">
-        <label for="file">Please Select a File: </label>
-        <input type="file" id="file" accept=".pdf"  />
-      </div>
-        <button>
-         Submit Proof 
-        </button>
-    </form>
-  </body>
 
   <script>
     MathJax = {

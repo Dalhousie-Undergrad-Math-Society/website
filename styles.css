@@ -50,3 +50,16 @@ input::file-selector-button{
 .pretty-wrap {
   text-wrap: pretty;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  clear: both;
+}
+
+.no-bullets {
+  list-style-type: none;
+}

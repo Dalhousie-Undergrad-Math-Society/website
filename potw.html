@@ -14,7 +14,7 @@
 <header class="header">
   <nav class="navbar">
     <a href="index.html">Home</a>
-    <a href="calendar.html">Events</a>
+    <!-- <a href="calendar.html">Events</a> -->
     <div id="problems">
       Problem of the
       <a id="potw" href="potw.html">Week<a>
@@ -34,21 +34,35 @@
 
   <hr>
 
-
-
-  <form method="post">
-    <div>
-      <label for="inp">Answer:</label>
-      <input name="inp"  />
-      <button>
-        Preview
-      </button>
-      <button>
-        Submit
-      </button>
-    </div>
+  <form id="inputForm" action="http://api.dalmath.ca/submit", method="post">
+    <input type="email" name="email" placeholder="Email">
+    <input name="answer" placeholder="Answer">
+    <input type="submit" value="Submit">
   </form>
-</body>
+
+  <h1 class="header center">Winners</h1>
+  <div class="row">
+    <h4 class="center"> 2024</h4>
+    <div class="column">
+      <ul class="no-bullets">
+        <li class="center">Lamisa Rahman - Nov 18-22</li>
+      </ul>
+    </div> 
+    <div class="column">
+      <ul class="no-bullets">
+        <li class="center">Ana Mastnak - Nov 25-29</li>
+      </ul>
+    </div>
+    <h4 class="center">2025</h4>
+        <div class="column">
+          <ul class="no-bullets">
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="no-bullets">
+          </ul>
+        </div>
+  </div>
 
 <script>
   MathJax = {
@@ -63,6 +77,7 @@
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="monospace.js"></script>
+<!-- <script src="submit.js"></script> -->
 
 
 </html>
