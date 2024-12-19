@@ -5,8 +5,9 @@
   <title>Math Society</title>
   <link rel="stylesheet" href="reset.css">
 
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="monospace.css">
+
+  <link rel="stylesheet" href="styles.css">
   </head>
 
   <header class="header">
@@ -23,7 +24,43 @@
       <a href="mailto:dumss@dal.ca">Contact Us</a>
     </nav>
   </header>
+  <hr>
 
+
+  <body>
+    <h1 class="header center">Problem of the Month</h1>
+    <p>
+    Let $C$ be a unit circle. Let the equilateral triangle be inscribed into $C$. What is the probability that a random chord on $C$ has length greater than the sides of the triangle? 
+    </p>
+
+    <p>That is, what is the probability that a random chord $A$ has length greater than $\sqrt{3}$
+    </p>
+
+    <hr>
+
+
+
+    <form>
+      <div class="inline-input">
+        <label for="file">Submit: </label>
+        <input type="file" />
+      </div>
+    </form>
+  </body>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      loader: {load: ['ui/lazy', 'input/tex', 'output/svg']},
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="monospace.js"></script>
 
 
 </html>

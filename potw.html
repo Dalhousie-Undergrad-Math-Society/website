@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Math Society</title>
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="monospace.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="calendar.html">Events</a>
+    <div id="problems">
+      Problem of the
+      <a id="potw" href="potw.html">Week<a>
+          /
+          <a id="potm" href="potm.html">Month</a>
+    </div>
+    <a href="assets/constitution.pdf">Constitution</a>
+    <a href="mailto:dumss@dal.ca">Contact Us</a>
+  </nav>
+</header>
+<hr>
+
+
+<body>
+  <h1 class="header center">Problem of the Week</h1>
+  <p class="pretty-wrap">Let Champernowne's Constant $C = 0.12345678910\dots$ be the string concatenation of the non-negative integers. Find the 100,000 digit of $C$.</p>
+
+  <hr>
+
+
+
+  <form method="post">
+    <div>
+      <label for="inp">Answer:</label>
+      <input name="inp"  />
+      <button>
+        Preview
+      </button>
+      <button>
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    loader: { load: ['ui/lazy', 'input/tex', 'output/svg'] },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="monospace.js"></script>
+
+
+</html>

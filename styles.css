@@ -1,11 +1,36 @@
 .navbar {
   display: flex;
   justify-content: space-between; 
-  gap: 1em;
+  gap: 1rem;
 }
-
 
 .navbar > * {
   padding: 0;
   margin: 0;
+}
+
+* + * {margin-top:0;}
+
+.center {
+  text-align: center;
+}
+
+
+input[type=file] {
+  border: none;
+}
+
+.inline-input {
+  display: inline;
+  white-space: nowrap;
+}
+
+.inline-input > * {
+  display: inline;
+}
+
+
+.pretty-wrap {
+  width: 100%;
+  text-wrap: pretty;
 }
