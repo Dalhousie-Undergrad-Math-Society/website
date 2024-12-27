@@ -1,3 +1,7 @@
+:root {
+    --line-height: 1.20rem;
+    --border-thickness: 2px;
+}
 .navbar {
   display: flex;
   justify-content: space-between; 
@@ -16,9 +20,22 @@
 }
 
 
-input[type=file] {
-  border: none;
+input::file-selector-button{
+    border: var(--border-thickness) solid;
+    padding:
+        calc(var(--line-height) / 2 - var(--border-thickness)) calc(1ch - var(--border-thickness));
+
+        
 }
+
+.file-input {
+  border: var(--border-thickness) solid ;
+  color: transparent;
+  padding:
+    calc(var(--line-height) / 2 - var(--border-thickness)) calc(1ch - var(--border-thickness));
+    cursor: pointer;
+}
+
 
 .inline-input {
   display: inline;
@@ -31,6 +48,5 @@ input[type=file] {
 
 
 .pretty-wrap {
-  width: 100%;
   text-wrap: pretty;
 }

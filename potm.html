@@ -29,11 +29,11 @@
 
   <body>
     <h1 class="header center">Problem of the Month</h1>
-    <p>
+    <p class="pretty-wrap">
     Let $C$ be a unit circle. Let the equilateral triangle be inscribed into $C$. What is the probability that a random chord on $C$ has length greater than the sides of the triangle? 
     </p>
 
-    <p>That is, what is the probability that a random chord $A$ has length greater than $\sqrt{3}$
+    <p class="pretty-wrap">That is, what is the probability that a random chord $A$ has length greater than $\sqrt{3}$?
     </p>
 
     <hr>
@@ -42,9 +42,12 @@
 
     <form>
       <div class="inline-input">
-        <label for="file">Submit: </label>
-        <input type="file" />
+        <label for="file">Please Select a File: </label>
+        <input type="file" id="file" accept=".pdf"  />
       </div>
+        <button>
+         Submit Proof 
+        </button>
     </form>
   </body>
 
