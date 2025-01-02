@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --line-height: 1.20rem;
     --border-thickness: 2px;
@@ -8,6 +9,15 @@
   gap: 1rem;
 }
 
+=======
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1em;
+}
+
+
+>>>>>>> 3df3c99 (Initial Commit)
 .navbar > * {
   padding: 0;
   margin: 0;
