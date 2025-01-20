@@ -31,7 +31,7 @@
 <body>
   <h1 class="header center">Problem of the Week</h1>
 
-  <p class="pretty-wrap">True or False: \[\sum^n_{k=1} 2k-1 = n^2\] for all $n \in \mathbb{N}$.</p>
+  <p class="pretty-wrap">Is it possible to completely tile an $8 \times 8$ chess board with an extra cell attached to the first row using $1 \times 2$ dominos?.</p>
 
   <hr>
 
@@ -42,8 +42,13 @@
   </form>
   <hr>
   <h1 class="header center">Last Week's Answer</h1>
-  <p class="pretty-wrap">The length of longest sum of consecutive n$^{\text{th}}$ powers such that \[ (x^n) +
-    (x+1)^n + (x+2)^n + \cdots + (x + k) ^n = 2025\] is when $n = 0$. This gives us 2025 $1$'s, for a length of 2025 and sum of $2025$.</p>
+  <p class="pretty-wrap">  $$\begin{align}
+    \sum^{n}_{k=1} 2k-1 & = 2 \sum^n_{k=1} k - \sum^n_{k=1}1\\
+    & = 2 \left(\frac{n(n+1)}{2}\right) - n\\
+    & = n(n+1) - n\\
+    &= n^2
+    \end{align}$$
+  </p>
   <hr>
   <h1 class="header center">Winners</h1>
   <div class="row">
