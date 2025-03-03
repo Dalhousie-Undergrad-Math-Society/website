@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Math Society</title>
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="monospace.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <!-- <a href="calendar.html">Events</a> -->
+    <div id="problems">
+      Problem of the
+      <a id="potw" href="potw.html">Week<a>
+          /
+          <a id="potm" href="potm.html">Month</a>
+    </div>
+    <a href="assets/constitution.pdf">Constitution</a>
+    <a href="archive.html">Archive</a>
+    <a href="mailto:dumss@dal.ca">Contact Us</a>
+  </nav>
+</header>
+<hr>
+<h1 class="header center"> January 2025</h1>
+Prove or disprove:
+<p>
+  \[2024^{2025} < 2025^{2024}\]
+</p>
+<h1 class="header center">February 2025</h1>
+      An <em>inverse sum triangle</em> is a triangle constructed such that every $n$ sits above two integers, $a$ and $b$,
+      whose absolute difference $|a - b|$ is minimal. </p>
+      <p>
+        Some inverse sum triangles are not valid, as they cannot be completed. In the example below, we show one valid
+        triangle, that of $10$. The invalid triangle, that of $18$, is invalid because the 2nd and 3rd entries (from the left)
+        of the final row must both be 1, but $1 \not = 1+1$.
+      </p>
+      <div class="center">
+        <embed src="assets/InvPascals.png">
+      </div>
+      
+      <p class="pretty-wrap">
+        A <em>failure rule</em> is a pattern that guarantees an inverse sum triangle is invalid.
+      </p>
+      
+      <p>Please provide all possible failure rules, with proof of their universality (That they are true for all triangles)
+        and their individuality (That they do not rely on another failure rule).
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    loader: { load: ['ui/lazy', 'input/tex', 'output/svg'] },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="monospace.js"></script>
+</html>
